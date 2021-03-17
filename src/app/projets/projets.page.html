@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar class="ion-text-center">
+        <h2> Projets</h2>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list *ngFor="let item of projetsList" [routerLink]="['projet-details',item.id]">
+        <ion-card>
+            <img [src]="item.banner" width="400" height="300" />
+            <ion-card-header>
+                <ion-card-subtitle>{{ item.type }}</ion-card-subtitle>
+                <ion-card-title>{{ item.titre }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                {{ item.descP }}
+            </ion-card-content>
+        </ion-card>
+    </ion-list>
+
+
+</ion-content>

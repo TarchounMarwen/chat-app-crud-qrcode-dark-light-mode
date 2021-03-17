@@ -1,0 +1,85 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tabs/projets"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="ion-text-center">
+            {{ (projectDetails |async)?.titre }}
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+    <img src="{{ (projectDetails |async)?.banner }}" alt="" width="400" height="300">
+    <!-- <ion-img [src]="(projectDetails | async)?.image"></ion-img> -->
+    <ion-card no-margin>
+        <ion-card-header>
+            <ion-card-title>
+                {{ (projectDetails |async)?.titre }}
+
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            {{ (projectDetails | async)?.descP }}
+            <br>
+            <br>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <ion-chip>{{ (projectDetails | async)?.startDate }}</ion-chip>
+                    </ion-col>
+                    <ion-col>
+                        <ion-chip>{{ (projectDetails | async)?.endDate }}</ion-chip>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-list lines="none">
+            <ion-item>
+                <ion-label> local</ion-label>
+                <ion-chip>{{ (projectDetails | async)?.local }}</ion-chip>
+            </ion-item>
+            <ion-item>
+                <ion-label> Nom du club</ion-label>
+                <ion-chip>{{ (projectDetails | async)?.ClubName }}</ion-chip>
+            </ion-item>
+
+
+        </ion-list>
+    </ion-card>
+    <ion-card>
+        <ion-list lines="none">
+            <ion-item>
+                <ion-label> type </ion-label>
+                <ion-chip>{{ (projectDetails | async)?.type }}</ion-chip>
+            </ion-item>
+            <ion-item>
+                <ion-label> cible</ion-label>
+                <ion-chip>{{ (projectDetails | async)?.cible }}</ion-chip>
+            </ion-item>
+
+
+        </ion-list>
+    </ion-card>
+    <ion-card>
+        <ion-list lines="none">
+            <ion-item>
+                <ion-label> capacite </ion-label>
+                <ion-chip>{{ (projectDetails | async)?.capacite }}</ion-chip>
+            </ion-item>
+            <ion-item>
+                <ion-label> prix</ion-label>
+                <ion-chip>{{ (projectDetails | async)?.prix }} dt</ion-chip>
+            </ion-item>
+
+
+        </ion-list>
+    </ion-card>
+
+</ion-content>

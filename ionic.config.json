@@ -1,5 +1,7 @@
 {
   "name": "tunivisions_link",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

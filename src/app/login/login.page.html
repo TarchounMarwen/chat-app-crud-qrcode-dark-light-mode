@@ -1,0 +1,46 @@
+<ion-content class="ion-padding">
+
+    <ion-grid>
+
+        <ion-row>
+            <ion-col></ion-col>
+            <ion-col>
+                <ion-icon name="person-circle" class="person"></ion-icon>
+            </ion-col>
+            <ion-col></ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <form class="form" [formGroup]="credentialForm">
+
+        <ion-item>
+            <ion-label position="floating" color="primary">Email</ion-label>
+            <ion-input type="text" formControlName="email" autofocus="true" clearInput="true"></ion-input>
+        </ion-item>
+        <div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
+            <span *ngIf="email.errors?.required">Email est requis</span>
+            <span *ngIf="email.errors?.email">Email est invalide</span>
+        </div>
+
+        <br>
+        <br>
+        <ion-item>
+            <ion-label position="floating" color="primary">Mot de passe </ion-label>
+            <ion-input type="password" formControlName="password" class="form-controll" required></ion-input>
+        </ion-item>
+        <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
+            <span *ngIf="password.errors?.required">Mot de passe requis</span>
+            <span *ngIf="password.errors?.minlength">Le mot de passe doit contenir 6 caractères</span>
+        </div>
+        <br>
+        <br>
+
+    </form>
+
+    <ion-button (click)="signUp()" expand="full" shape="round" color="danger">S'inscrire</ion-button>
+    <h2 class="ion-text-center">Ou</h2>
+    <ion-button (click)="signIn()" expand="full" color="secondary" shape="round">Connexion</ion-button>
+
+
+
+</ion-content>

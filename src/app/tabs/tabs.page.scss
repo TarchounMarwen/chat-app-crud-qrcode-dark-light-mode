@@ -1,1 +1,6 @@
-
+ion-tab-button:focus {
+    ion-icon {
+        color: var(--ion-color-danger) !important;
+        --ion-color-base: var(--ion-color-danger) !important;
+    }
+}

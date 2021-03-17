@@ -1,0 +1,47 @@
+ion-content {
+    // --ion-background-color: linear-gradient(to left, #d65959, #d4c881);
+    //--ion-background-color: #bd1b1b;
+    --ion-background-color: #bdc3c7;
+    /* fallback for old browsers */
+    --ion-background-color: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    --ion-background-color: linear-gradient(to left, #2c3e50, #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ion-row {
+        ion-col {
+            font-size: 60px;
+            .person {
+                font-size: 170px;
+            }
+        }
+    }
+    ion-item {
+        border-radius: 25px;
+        .label-floating.sc-ion-label-md-h {
+            color: rgb(253, 244, 244);
+        }
+    }
+    ion-row {
+        ion-col {
+            .button-outline {
+                color: antiquewhite;
+                border-color: #fffdfd !important;
+            }
+            a {
+                color: #fffdfd !important;
+                position: relative;
+                right: -150px;
+            }
+            a:hover {
+                color: rgb(70, 65, 65);
+            }
+        }
+    }
+    .errors {
+        font-size: small;
+        color: #fff;
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}

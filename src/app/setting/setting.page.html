@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Paramètre</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label> Mode {{ colorTheme }} </ion-label>
+        <img [src]="iconUrl" alt="" width="40px" height="40px">
+        <ion-toggle (ionChange)="onToggleColorTheme($event)" mode="ios"></ion-toggle>
+
+    </ion-item>
+
+    <ion-item>
+        <ion-label>
+            déconnecter
+        </ion-label>
+        <ion-button (click)="logout()" fill="outline" shape="round" color="danger" slot="end" style="width: 70px;">
+            <ion-icon name="log-out-outline"></ion-icon>
+        </ion-button>
+    </ion-item>
+
+
+</ion-content>

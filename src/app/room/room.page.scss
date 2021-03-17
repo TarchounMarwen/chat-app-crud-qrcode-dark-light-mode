@@ -1,0 +1,113 @@
+.status {
+    color: green;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+ion-header ion-avatar {
+    padding: 3px;
+}
+
+ion-content {
+    position: relative;
+    --ion-background-color: #bdc3c7;
+    /* fallback for old browsers */
+    --ion-background-color: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    --ion-background-color: linear-gradient(to left, #2c3e50, #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ion-footer ion-toolbar {
+    --background: #f4f4f4;
+}
+
+ion-footer ion-button {
+    font-weight: 600;
+}
+
+ion-input {
+    background: white !important;
+    height: 31px;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 4px;
+    border: 1px #dfdfdf solid;
+    --padding-start: 8px;
+}
+
+///////////////////////////////////////////////////////////////////
+.message-input {
+    width: 100%;
+    border: 1px solid var(--ion-color-medium);
+    border-radius: 6px;
+    background: #fff;
+    resize: none;
+    margin-top: 0px;
+    --padding-start: 8px;
+}
+
+.message {
+    padding: 10px !important;
+    border-radius: 10px !important;
+    margin-bottom: 4px !important;
+    white-space: pre-wrap;
+}
+
+.my-message {
+    background-color: #e9e1e4;
+    opacity: 0.5;
+    color: #fff;
+}
+
+.other-message {
+    background-color: #4a1a1a;
+    opacity: 0.8;
+    color: #fff;
+}
+
+.time {
+    color: #583435;
+    float: right;
+    font-size: small;
+}
+
+.msgleft {
+    color: #9bafb5;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.msgright {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #583435;
+}
+
+// ion-content {
+//     --offset-top: 0 !important;
+// }
+.emailleft {
+    color: #b2b9be;
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.emailright {
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #583435;
+}
+
+.timeleft {
+    color: #cccaec;
+}
+
+.md body[color-theme=dark] {
+    .status {
+        color: white;
+    }
+}
