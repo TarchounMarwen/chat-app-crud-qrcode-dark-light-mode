@@ -8,7 +8,7 @@ export const environment = {
     apiKey: '************************',
     authDomain: '***********************',
     databaseURL: '************************',
-    projectId: 'tunivisionslink-ac9d4',
+    projectId: '**********************************',
     storageBucket: '******************************',
     messagingSenderId: '************************',
     appId: '**************************************'
